@@ -1,9 +1,24 @@
-<p>This is the partial for view 1. 
+<p>This is the partial for view 1.
 	Here is an example of value controlled by MyCtrl1 : {{aVariable}}</p>
 
 	<p></p>
 	<p>Here is now an example of value extracted from an AngularJS Service injected into MyCtrl1 : {{valueFromService}}</p>
 <p></p>
-	<p>Here is now an example of correctly used directive : <inputtext /></p>
+	<p>Here is now an example of correctly used directive : <inputtext/></p>
+
+<p>Add map below</p>
+
+<div ng-controller="MapCtrl">
+                <google-map id="mymap"
+                        center="center"
+                        zoom="zoom"
+                        draggable="true"
+                        mark-click="false">
+                        <markers>
+                            <marker ng-repeat="marker in markers" coords="marker">
+                            </marker>
+                        </markers>
+                </google-map>
+            </div>
 
 

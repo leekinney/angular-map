@@ -1,5 +1,7 @@
 /* app css stylesheet */
 
+body {font-family: 'Open Sans', sans-serif; font-size: 16px/.75em;}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
